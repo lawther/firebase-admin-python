@@ -61,6 +61,8 @@ setup(
     install_requires=install_requires,
     packages=['firebase_admin'],
     python_requires='>=3.7',
+    include_package_data=True,
+    package_data={"firebase_admin": ["py.typed"]},
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
